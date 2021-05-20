@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B9E30655C069047558F93E /* Pods_DiscordX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C879189ACF3B9A011FE6C036 /* Pods_DiscordX.framework */; };
 		5028EA45244B181D003A1830 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EA44244B181D003A1830 /* HelperFunctions.swift */; };
 		5068E2DF244AA3C90012CCF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068E2DE244AA3C90012CCF7 /* Constants.swift */; };
 		50C66C1B244B3A5800A4BECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C66C1A244B3A5800A4BECD /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		50C6CBB7244974A700F10C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C6CBB6244974A700F10C5D /* Assets.xcassets */; };
 		50C6CBBA244974A700F10C5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C6CBB9244974A700F10C5D /* Preview Assets.xcassets */; };
 		50C6CBC9244975F200F10C5D /* Applescript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6CBC8244975F200F10C5D /* Applescript.swift */; };
-		C3DCE3CB251FBE3F008A8718 /* SwordRPC in Frameworks */ = {isa = PBXBuildFile; productRef = C3DCE3CA251FBE3F008A8718 /* SwordRPC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +28,9 @@
 		50C6CBBE244974A700F10C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50C6CBBF244974A700F10C5D /* DiscordX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscordX.entitlements; sourceTree = "<group>"; };
 		50C6CBC8244975F200F10C5D /* Applescript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applescript.swift; sourceTree = "<group>"; };
+		A570C50BA3B89768ED5ECD2B /* Pods-DiscordX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscordX.release.xcconfig"; path = "Target Support Files/Pods-DiscordX/Pods-DiscordX.release.xcconfig"; sourceTree = "<group>"; };
+		C879189ACF3B9A011FE6C036 /* Pods_DiscordX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscordX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7644989C1DA294BFBACDC1 /* Pods-DiscordX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscordX.debug.xcconfig"; path = "Target Support Files/Pods-DiscordX/Pods-DiscordX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3DCE3CB251FBE3F008A8718 /* SwordRPC in Frameworks */,
+				48B9E30655C069047558F93E /* Pods_DiscordX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0434A568C432EE4481FDA17F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF7644989C1DA294BFBACDC1 /* Pods-DiscordX.debug.xcconfig */,
+				A570C50BA3B89768ED5ECD2B /* Pods-DiscordX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		50C6CBA6244974A400F10C5D = {
 			isa = PBXGroup;
 			children = (
 				50C6CBB1244974A400F10C5D /* DiscordX */,
 				50C6CBB0244974A400F10C5D /* Products */,
+				0434A568C432EE4481FDA17F /* Pods */,
+				B75C74793BD4E99785D06021 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +96,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B75C74793BD4E99785D06021 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C879189ACF3B9A011FE6C036 /* Pods_DiscordX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,18 +111,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50C6CBC2244974A700F10C5D /* Build configuration list for PBXNativeTarget "DiscordX" */;
 			buildPhases = (
+				E987E090A2671E0148007DA1 /* [CP] Check Pods Manifest.lock */,
 				50C6CBAB244974A400F10C5D /* Sources */,
 				50C6CBAC244974A400F10C5D /* Frameworks */,
 				50C6CBAD244974A400F10C5D /* Resources */,
+				4292FAF089ECED5F87F055D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DiscordX;
-			packageProductDependencies = (
-				C3DCE3CA251FBE3F008A8718 /* SwordRPC */,
-			);
 			productName = RPFX;
 			productReference = 50C6CBAF244974A400F10C5D /* DiscordX.app */;
 			productType = "com.apple.product-type.application";
@@ -130,9 +151,6 @@
 				Base,
 			);
 			mainGroup = 50C6CBA6244974A400F10C5D;
-			packageReferences = (
-				C3DCE3C9251FBE3F008A8718 /* XCRemoteSwiftPackageReference "SwordRPC" */,
-			);
 			productRefGroup = 50C6CBB0244974A400F10C5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +172,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4292FAF089ECED5F87F055D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscordX/Pods-DiscordX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscordX/Pods-DiscordX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiscordX/Pods-DiscordX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E987E090A2671E0148007DA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscordX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50C6CBAB244974A400F10C5D /* Sources */ = {
@@ -287,15 +347,16 @@
 		};
 		50C6CBC3244974A700F10C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7644989C1DA294BFBACDC1 /* Pods-DiscordX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DiscordX/DiscordX.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2020.9.30;
 				DEVELOPMENT_ASSET_PATHS = "\"DiscordX/Preview Content\"";
-				DEVELOPMENT_TEAM = CQZU37S3DP;
+				DEVELOPMENT_TEAM = 3G4595GUAV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DiscordX/Info.plist;
@@ -305,7 +366,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asad.DiscordX;
+				PRODUCT_BUNDLE_IDENTIFIER = is.byeon.DiscordX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -313,15 +374,16 @@
 		};
 		50C6CBC4244974A700F10C5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A570C50BA3B89768ED5ECD2B /* Pods-DiscordX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DiscordX/DiscordX.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2020.9.30;
 				DEVELOPMENT_ASSET_PATHS = "\"DiscordX/Preview Content\"";
-				DEVELOPMENT_TEAM = CQZU37S3DP;
+				DEVELOPMENT_TEAM = 3G4595GUAV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DiscordX/Info.plist;
@@ -331,7 +393,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asad.DiscordX;
+				PRODUCT_BUNDLE_IDENTIFIER = is.byeon.DiscordX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -359,25 +421,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C3DCE3C9251FBE3F008A8718 /* XCRemoteSwiftPackageReference "SwordRPC" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/PKBeam/SwordRPC.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C3DCE3CA251FBE3F008A8718 /* SwordRPC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3DCE3C9251FBE3F008A8718 /* XCRemoteSwiftPackageReference "SwordRPC" */;
-			productName = SwordRPC;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50C6CBA7244974A400F10C5D /* Project object */;
 }

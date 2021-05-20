@@ -1,0 +1,28 @@
+PODS:
+  - BlueSocket (0.12.94)
+  - SwordRPC (0.2.0):
+    - BlueSocket (~> 0.12)
+
+DEPENDENCIES:
+  - SwordRPC (from `https://github.com/PKBeam/SwordRPC.git`)
+
+SPEC REPOS:
+  trunk:
+    - BlueSocket
+
+EXTERNAL SOURCES:
+  SwordRPC:
+    :git: https://github.com/PKBeam/SwordRPC.git
+
+CHECKOUT OPTIONS:
+  SwordRPC:
+    :commit: c408a44e3e380b454cdf80bdf8d5e69922481833
+    :git: https://github.com/PKBeam/SwordRPC.git
+
+SPEC CHECKSUMS:
+  BlueSocket: 184ff448002475bfb5d676286c2458da5d971f47
+  SwordRPC: 5899836f01134d511bf804f91849966fa9a20f77
+
+PODFILE CHECKSUM: 7347f81f9b21c79c9d603672a485b917352cbb99
+
+COCOAPODS: 1.10.1
